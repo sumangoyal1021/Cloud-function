@@ -1,2 +1,2 @@
 #Firebase
-Firebase Cloud Function
+Cloud Function
