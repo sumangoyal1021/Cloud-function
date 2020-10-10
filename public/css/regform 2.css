@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+.container{
+    background-color: black;
+    color: blanchedalmond;
+    height: 950px;
+    width: 1200px;
+    margin-top: 30px;
+}
+
+h1{
+    color: chocolate
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 575px){
+    .container{
+        height: 1000px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 467px){
+    .container{
+        height: 1000px;
+        width: 390px;
+    }
+}
+
+@media (min-width: 575px){
+    .container{
+        height: 1000px;
+        width: 1200px;
+    }
+}
