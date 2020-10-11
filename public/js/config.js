@@ -13,10 +13,10 @@ firebase.initializeApp(firebaseConfig);
 
 // say hello function call
 
-const button = document.querySelector('.call');
-button.addEventListener('click', () => {
-    const sayHello = firebase.functions().httpsCallable('sayHello');
+function display() {
+    var button = document.getElementById('call');
+    var sayHello = firebase.functions().httpsCallable('sayHello');
     sayHello().then(result => {
         console.log(result.data);
     });
-});
+};
