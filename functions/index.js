@@ -7,3 +7,9 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
     console.log("hello suman")
     response.send("Hello from Firebase!");
 });
+
+// callable function
+
+exports.sayHello = functions.https.onCall((data, context) => {
+    return 'hello, suman';
+});
