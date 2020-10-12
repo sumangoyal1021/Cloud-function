@@ -20,3 +20,5 @@ function display() {
         console.log(result.data);
     });
 };
+
+// firebase trigger
