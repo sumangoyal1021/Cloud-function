@@ -11,7 +11,7 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
-// say hello function call
+// ********************* say hello function call *********************************
 
 function display() {
     var button = document.getElementById('call');
@@ -21,4 +21,22 @@ function display() {
     });
 };
 
-// firebase trigger
+//************************ cloud firestore **********************************
+
+function submit() {
+    var name = document.getElementById('name').value;
+    var description = document.getElementById('des').value;
+    var title = document.getElementById('title').value;
+
+
+    var storeData = firebase.functions().httpsCallable('myFunction');
+    storeData({ Name: name, Description: description, Title: title }).then(result => {
+        console.log(result);
+    });
+};
+
+// firestore.collection('Bussiness').onSnapshot(function(snapshot) {
+//     snapshot.docChanges().forEach(function(change) {
+//         console.log(change.doc.data());
+//     });
+// });
