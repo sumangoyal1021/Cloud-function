@@ -34,9 +34,3 @@ function submit() {
         console.log(result);
     });
 };
-
-// firestore.collection('Bussiness').onSnapshot(function(snapshot) {
-//     snapshot.docChanges().forEach(function(change) {
-//         console.log(change.doc.data());
-//     });
-// });

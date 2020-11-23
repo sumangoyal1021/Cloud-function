@@ -44,3 +44,10 @@ exports.myFunction = functions.https.onRequest((request, response) => {
             });
     });
 });
+
+// Cloud storage
+
+exports.onFileChange = functions.storage.object().onChange(event => {
+    console.log(event);
+    return;
+});
